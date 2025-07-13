@@ -155,16 +155,45 @@ body {
     border-left: 8px solid rgb(255, 185, 55);
 }
 
+#projects-grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    padding: 30px;
+}
+
+.project-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.project-actions img {
+    height: 35px;
+    width: 35px;
+}
+
 #announcements {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
 #announcements-container {
+    margin-top: 10px;
     background-color: white;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 2px 4px 1px rgba(147, 112, 216, 0.425);
+}
+
+#announcements-container div {
+    padding: 5px;
 }
 
 #border-div {
@@ -178,6 +207,7 @@ body {
 }
 
 #trending-container {
+    margin-top: 10px;
     background-color: white;
     padding: 30px;
     display: flex;
@@ -206,10 +236,4 @@ body {
 .trending-text-section p {
     font-size: 14px;
     color: gray;
-}
-
-#projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 25px;
 }
